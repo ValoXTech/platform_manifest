@@ -7,6 +7,9 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+  
+  <remote name="valox"
+           fetch="https://github.com/ValoXTech" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -17,6 +20,10 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+  
+  <!-- ValoXTech Projects -->
+  <!-- Device -->
+  <project path="device/xiaomi/gemini" name="platform_device_xiaomi_gemini" groups="pdk" remote="valox" revision="cm-14.0" />
 
   <!-- AOSP Projects -->
 
